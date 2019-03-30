@@ -51,5 +51,5 @@ Exercism is responsible for the display and communication of comments. The analy
 - While friendly, they should not try and pretend to be a human and should not contain greetings, etc.
 - The solution should not act like the start of a discussion.
 
-- A good comment would be "You could improve this solution by doing XYZ".
+- A good comment would be "This solution may be improved by doing XYZ".
 - A bad comment would be "Hello. Have you thought about doing XYZ?".

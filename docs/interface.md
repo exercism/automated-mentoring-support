@@ -40,7 +40,7 @@ The following statuses are valid:
 
 The contents of stdout and stderr from each run will be persisted into files that can be viewed later.
 
-You may write an `analysis.out` file that contains and debugging information you want to later view.
+You may write an `analysis.out` file that contains debugging information you want to later view.
 
 At a later date, we will provide an interface for you to download these files along with the submitted files and analysis.json.
 

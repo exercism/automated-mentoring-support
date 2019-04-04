@@ -69,7 +69,7 @@ remark at all.
     official. In fact, there are multiple linters out there, with mutually exclusive
     rules.
 - **Go** has very strict rules around naming and other linting.
-  - :-1: If the student does not follow these rules (e.g. has not applied `gofmt`)
+  - :-1: If the student does not follow these rules (e.g. has not applied `golint`)
 
 ### Badly formatted code
 

@@ -58,8 +58,8 @@ remark at all.
 - **Ruby** has _defacto_ standards on `cAsInG` and `name-ing`,
   - :no_bell: If a student uses `camelCase` for a variable, leave it be.
   - :speech_balloon: You may guide students that `snake_case` is to be expected by
-    most IDE's and highlighting on exercism in code blocks for variables.
-- **JavaScript** IDE's highlight variables which are not used, except for those
+    most IDEs and highlighting on exercism in code blocks for variables.
+- **JavaScript** IDEs highlight variables which are not used, except for those
   prefixed with an underscore (`_`).
   - :speech_balloon: Note that this behaviour exist so it might help them to use a
     different naming strategy. They might think that prefixing with `_` means 

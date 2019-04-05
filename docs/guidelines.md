@@ -79,7 +79,7 @@ parser or based on official rules (which means there is a dependency on
 correctness in tools), you should `disapprove_with_comment`, preferably linking
 to the official rules. 
 
-> - :-1: dissapprove if there are official guidelines on naming conventions
+> - :-1: disapprove if there are official guidelines on naming conventions
 > - :speech_balloon: leave a comment if there is something noteworthy
 > - :no_bell: if its a _stylistic_ preference, **and** there are _competing
 >   standards_, do not remark at all. Since there are competing standards,

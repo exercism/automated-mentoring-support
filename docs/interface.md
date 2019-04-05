@@ -4,7 +4,7 @@ All interactions with the Exercism website are handled automatically. Analyzers 
 
 ## Execution
 
-- An analyzer should provide an executable script at `bin/analyze.sh` which will be called by the external orchestrator. You can see [an example here](https://github.com/exercism/ruby-analyzer/blob/master/bin/analyze.sh#L4).
+- An analyzer should provide an executable script. You can find more information in the [docker.md](https://github.com/exercism/automated-mentoring-support/blob/master/docs/docker.md) file.
 - The script will receive two parameters:
   - The slug of the exercise (e.g. `two-fer`).
   - A path to a directory containing the submitted file(s) (with a trailing slash).

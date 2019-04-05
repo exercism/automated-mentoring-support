@@ -96,7 +96,7 @@ to the official rules.
   - :-1: if a student uses `_` for a variable name, but then uses it.
 - **Ruby** recognises `constants` only if they start with a **C**apital Letter,
   - :-1: if a student uses `snake_case` for a `class` name
-- **Ruby** has _defacto_ standards on `cAsInG` and `name-ing`,
+- **Ruby** has _de facto_ standards on `cAsInG` and `name-ing`,
   - :no_bell: if a student uses `camelCase` for a variable, leave it be.
   - :speech_balloon: you **SHOULD** guide students that `snake_case` is to be
     expected by most IDEs and highlighting on exercism in code blocks.

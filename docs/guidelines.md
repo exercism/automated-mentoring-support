@@ -28,8 +28,11 @@ must still guard against unwanted behaviour.
 
 In this document, **de facto** is defined as follows:
 
-- **de facto**: describes practices that exist in reality, even if not officially recognized by laws.
-- **de facto standard**: a custom or convention that has achieved a dominant position by public acceptance or market forces. Unofficial customs that are widely accepted.
+- **de facto**: describes practices that exist in reality, even if not officially
+  recognized by laws.
+- **de facto standard**: a custom or convention that has achieved a dominant
+  position by public acceptance or market forces. Unofficial customs that are
+  widely accepted.
 
 In other words, if a nearly all developers (non-hobyists) who write code in a 
 certain language have established certain rules, these rules are a **de facto 

@@ -105,7 +105,7 @@ to the official rules.
   - :speech_balloon: note that this behaviour exist so it might help them to use
     a different naming strategy. They might think that prefixing with `_` means 
     `private`, which is not the case in JavaScript.
-- **TypeScript** has a _defacto_ standard lint tool provided by Palantir,
+- **TypeScript** has a _de facto_ standard lint tool provided by Palantir,
   - :no_bell: If a student does not follow these rules as the lint tool is not 
     official. In fact, there are multiple linters out there, with mutually
     exclusive rules.

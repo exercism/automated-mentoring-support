@@ -57,7 +57,7 @@ remark at all.
   - :-1: If a student uses `snake_case` for a `class` name
 - **Ruby** has _defacto_ standards on `cAsInG` and `name-ing`,
   - :no_bell: If a student uses `camelCase` for a variable, leave it be.
-  - :speech_balloon: You may guide students that `snake_case` is to be expected by
+  - :speech_balloon: You should guide students that `snake_case` is to be expected by
     most IDEs and highlighting on exercism in code blocks for variables.
 - **JavaScript** IDEs highlight variables which are not used, except for those
   prefixed with an underscore (`_`).

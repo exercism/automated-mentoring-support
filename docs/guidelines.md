@@ -11,10 +11,41 @@ In the following paragraphs, keywords such as **MUST**, **SHOULD**, **COULD**
 are to be interpreted as in [RFC2119](https://www.ietf.org/rfc/rfc2119.txt);
 given that we recognise the following four output states and their restrictions:
 
-- `approve_as_optimal`: **COULD** be a best solution, **SHOULD** be without comment
+- `approve_as_optimal`: **SHOULD** be a best solution, **SHOULD** be without comment
 - `approve_with_comment`: **COULD** be a best solution, **MUST** be with comment
 - `disapprove_with_comment`: **MUST** be with comment
 - `refer_to_mentor`: **COULD** be with comment
+
+### Why is it not ... (e.g. **MUST**)?
+
+Per [RFC2119](https://www.ietf.org/rfc/rfc2119.txt), if **MUST** is used, it is a
+guarantee that the rule is always so, and does not need to be guarded for. For
+example, **MUST** be without comment means that the website could crash if an
+analyzer sends a comment anyway. **SHOULD** indicates any consumer of the output
+must still guard against unwanted behaviour.
+
+### Idiomatic rules / Language features / Stylistic choices
+
+In this document, **de facto** is defined as follows:
+
+- **de facto**: describes practices that exist in reality, even if not officially recognized by laws.
+- **de facto standard**: a custom or convention that has achieved a dominant position by public acceptance or market forces. Unofficial customs that are widely accepted.
+
+In other words, if a nearly all developers (non-hobyists) who write code in a 
+certain language have established certain rules, these rules are a **de facto 
+standard** and become idiomatic use. Example: **Ruby** uses 2 space identation.
+
+Some rules are language features, even if they are not documented well. These
+language features are part of "idiomatic rules" and not stylistic choices.
+Example: **Ruby**'s MRI treats variables named `_` differently.
+
+Finally there are rules that are pure preferences, even though they might be
+adopted by large bodies such as organisations and corporations. These rules
+are usually part of _competing_ standards. Exercism does not favour one over
+another. Example: **TypeScript** has a linter `tslint` (or `eslint` + plugin)
+which is maintained by a company that is not Microsoft. It competes with other
+linters such as `xo`. Most of the rules are not language features or idiomatic
+rules, and therefore stylistic choices.
 
 ## Conditions and outcome
 
@@ -41,13 +72,20 @@ Given the above, and to re-iterate that we focus on language fluency:
 In general, if it's a _language feature_ that will be caught by a compiler or parser
 or based on official rules (which means there is a dependency on correctness in
 tools), you should `disapprove_with_comment`, preferably linking to the official
-rules. If it's a _stylistic_ choice, or there are _competing standards_, do not
-remark at all.
+rules. 
 
 > - :-1: dissapprove if there are official *strict* guidelines on naming conventions
 > - :+1: approve if there are only _defacto_ standard(s) and everything else is fine.
 > - :speech_balloon: leave a comment if there is something noteworthy
 > - :no_bell: ignore stylistic issues if it's not integral to the language
+
+- If it's a _stylistic_ preference, **and** there are _competing standards_, do not
+  remark at all. Since there are competing standards, they're all preferences.
+- If it's a _stylistic_ preference, **and** there is _one clear standard_, comment
+  on it. These rules are not _really_ preferences but idiomatic.
+- If it's a _stylistic_ preference, **and** there is no clear standard, but most to
+  all non-hobyist have adopted the same style, this might be idiomatic. Comment at
+  your discretion.
 
 #### Examples
 
@@ -70,6 +108,8 @@ remark at all.
     rules.
 - **Go** has very strict rules around naming and other linting.
   - :-1: If the student does not follow these rules (e.g. has not applied `golint`)
+- **Go** has very strict rules around formatting.
+  - :-1: If the student does not follow these rules (e.g. has not applied `gofmt`)
 
 ### Badly formatted code
 

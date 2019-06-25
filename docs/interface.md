@@ -21,7 +21,8 @@ The `analysis.json` file should be structured as followed:
     {
       "comment": "ruby.general.some_paramaterised_message",
       "params": { "foo": "param1", "bar": "param2" }
-    },{
+    },
+    {
       "comment": "ruby.general.some_paramaterised_message",
       "params": {}
     },

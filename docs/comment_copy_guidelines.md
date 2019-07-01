@@ -21,17 +21,17 @@ is made.
 ## CI
 
 Because the comments don't live in the same repository as the analyzer, each
-analyzer should have CI that chacks if the comments used in that specific
+analyzer should have CI that checks if the comments used in that specific
 analyzer (those that can become output), are comments on the `master` branch, on 
 the  [`exercism/website-copy`][git-website-copy] repository.
 
-At moment of writing, [this issue][issue-ci-comments] tracks the status of any
+At the moment of writing, [this issue][issue-ci-comments] tracks the status of any
 generalisation of this CI, if any.
 
 ## Wording
 
 - Avoid unnecessarily wordy comments. Be concise.
-- Be neutrally observational; avoiding charged statements and blanket statements
+- Be neutrally observational; avoiding charged statements and blanket statements.
 - Make the recommendation explicit.
 - When possible, put the recommendation first, then the explanation.
 - Avoid "me", "I", "we", etc, since the bot is not a person.
@@ -40,10 +40,10 @@ generalisation of this CI, if any.
 - Avoid words like "just", "simply", "obviously", which can come across as 
   condescending: if the comment is necessary, it was _obviously_ not _obvious_.
 - Avoid making assumptions about what people know and don't know. The only
-  exception is knowledge from earlier tracks in the _core_ exercises only. Avoid
+  exception is knowledge from already completed _core_ exercises. Avoid
   "as you know", "as you remember", "as you learned", "now that we all
-  undertstand x", because even though something was said, the person doesn't 
-  necessarily understood it.
+  understand x", because even though something was said, the person doesn't 
+  necessarily understand it.
 
 ### Early exercises
 
@@ -83,10 +83,10 @@ In JavaScript, a student has written a top-level constant with `let`.
 As you know, everyone uses const, you shouldn't use let or var.
 ```
 
-- The action is after the "explanation".
+- The action comes after the "explanation".
 - "As you know": we don't know if the student does.
 - "you shouldn't": you don't need the "you" to make this statement.
-- "everyone uses const": this isn't true ánd can make the student feel as if
+- "everyone uses const": this isn't true _and_ can make the student feel as if
   they did something horribly wrong.
 - Lacks an actual explanation of _why_ the advice is given.
 

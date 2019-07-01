@@ -45,9 +45,9 @@ generalisation of this CI, if any.
   understand x", because even though something was said, the person doesn't 
   necessarily understand it.
 
-### Early exercises
+### Guidance
 
-For the first exercises of a track, the following is _extra_ important:
+For the first few exercises of a track, the following is _extra_ important:
 
 - **Name the difference** between what the person is doing, and what is
   'idiomatic' in the language.
@@ -83,6 +83,8 @@ In JavaScript, a student has written a top-level constant with `let`.
 As you know, everyone uses const, you shouldn't use let or var.
 ```
 
+This comment is not following these guidelines for the following reasons:
+
 - The action comes after the "explanation".
 - "As you know": we don't know if the student does.
 - "you shouldn't": you don't need the "you" to make this statement.
@@ -92,9 +94,10 @@ As you know, everyone uses const, you shouldn't use let or var.
 
 ```markdown
 <!-- better -->
-Prefer `const` and `let` over `var`. The `const` declaration stops a variable from being accidentally reassigned, which provides safety, and reduces cognitive load for someone reading the code. [This article](https://medium.com/javascript-scene/javascript-es6-var-let-or-const-ba58b8dcde75) explains the difference between the three.
-“this variable is never reassigned”, reducing cognitive load and improving 
-maintainability.
+Prefer `const` and `let` over `var`. The `const` declaration stops a variable 
+from being accidentally reassigned, which provides safety, and reduces 
+cognitive load for someone reading the code. [This article](https://medium.com/javascript-scene/javascript-es6-var-let-or-const-ba58b8dcde75) 
+explains the difference between the three.
 ```
 
 In Go, a student has created a custom error instead of using the built-in ones:
@@ -107,6 +110,8 @@ simpler ways to create an error. Custom errors are helpful if you want to check
 if an error is of a certain type later.
 ```
 
+This comment is not following these guidelines for the following reasons:
+
 - "I see": the analyzer is not a person: avoid I.
 - "This is perfectly fine!": Apparently it's not otherwise the reassuring wasn't
   necessary. This probably can be left out all together; if you want to give a
@@ -118,7 +123,8 @@ if an error is of a certain type later.
 <!-- better -->
 A custom `error` is typically used to provide custom behavior, or to distinguish
 on type later. For simpler cases, it's more common to rely on `errors.New` or 
-`fmt.Errorf`. This [in depth article](https://golangbot.com/custom-errors/) about custom errors might be interesting.
+`fmt.Errorf`. This [in-depth article](https://golangbot.com/custom-errors/) about 
+custom errors might be interesting.
 ```
 
 [git-website-copy]: https://github.com/exercism/website-copy/tree/master/automated-comments

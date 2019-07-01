@@ -118,7 +118,7 @@ if an error is of a certain type later.
 <!-- better -->
 A custom `error` is typically used to provide custom behavior, or to distinguish
 on type later. For simpler cases, it's more common to rely on `errors.New` or 
-`fmt.Errorf`.
+`fmt.Errorf`. This [in depth article](https://golangbot.com/custom-errors/) about custom errors might be interesting.
 ```
 
 [git-website-copy]: https://github.com/exercism/website-copy/tree/master/automated-comments

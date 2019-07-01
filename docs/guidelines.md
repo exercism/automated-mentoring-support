@@ -28,7 +28,7 @@ must still guard against unwanted behaviour.
 A solution is approvable if it either matches the (set of) optimal solution(s)
 of that exercise, or if it shows understanding of the teaching goals of that
 exercise and every _core_ exercise that came before. This means that an
-analyzer **MAY** approve a solution but provide a set of comments as TIPS or
+analyzer **MAY** approve a solution but still provide a set of comments as TIPS or
 further improvements.
 
 ### Idiomatic rules / Language features / Stylistic choices

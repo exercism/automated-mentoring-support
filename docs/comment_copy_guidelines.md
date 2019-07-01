@@ -92,7 +92,7 @@ As you know, everyone uses const, you shouldn't use let or var.
 
 ```markdown
 <!-- better -->
-Prefer const and let over var. The `const` declaration tells readers, 
+Prefer `const` and `let` over `var`. The `const` declaration stops a variable from being accidentally reassigned, which provides safety, and reduces cognitive load for someone reading the code. [This article](https://medium.com/javascript-scene/javascript-es6-var-let-or-const-ba58b8dcde75) explains the difference between the three.
 “this variable is never reassigned”, reducing cognitive load and improving 
 maintainability.
 ```

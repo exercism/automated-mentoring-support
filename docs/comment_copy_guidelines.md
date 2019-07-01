@@ -7,7 +7,7 @@ _what_ to comment. This document talks mostly about _how_ to comment.
 ## Working directory for contents
 
 Comments for the analyzer live in the [`exercism/website-copy`][git-website-copy]
-repository. Changes should be made via a PR on this repository, changing only
+repository. Changes should be made via a PR on this repository, only changing
 the comments for one analyzer at a time. These will get the
 [`type/analyzer-comments` label][git-website-copy-label].
 

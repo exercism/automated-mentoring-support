@@ -61,7 +61,7 @@ For the first few exercises of a track, the following is _extra_ important:
   Learning sticks when people discover the answer for themselves. That's a 
   tremendously exhilarating experience, and the emotional kick makes it 
   memorable. However, if the discovery **doesn't** trigger a dopamine hit, it 
-  makes total sense to show what it looks like.
+  makes total sense to show what it looks like. For example, we might choose to provide a small improvement on an approved solution will be a lot less exciting than giving someone a learning point on a solution that is being disapproved and therefore may warrant an example rather than a link.
 - **Don't overly explain a concept**: don't go in depth about the underlying 
   mechanisms of compilers and things. In this case it's more about this being 
   one of the first exercises in the language track, and at this stage feedback

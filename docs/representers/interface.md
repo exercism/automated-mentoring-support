@@ -2,6 +2,8 @@
 
 All interactions with the Exercism website are handled automatically. Representers have the single responsibility of taking a solution and returning a representation of it.
 
+A _representation_ is an extraction of the solution to its essence without names, comments, spacing, etc. but still uniquely identifying the approach taken. Two different ways of solving the exercise must not have the same representation.
+
 ## Execution
 
 - A Representer should provide an executable script. You can find more information in the [docker.md](https://github.com/exercism/automated-mentoring-support/blob/master/docs/docker.md) file.

@@ -17,7 +17,9 @@ Note 2: the code for these guidelines will be in C#, but the guidelines are lang
 
 ## Normalize identifiers
 
-Representers should ignore naming differences. For example, identical source code that uses different parameter or variable names, should have the same representation.
+To allow for representations to be naming-agnostic, user-defined names (such as variables, functions, etc) can be replaced with placeholders. In this case, a `mapping.json` should be produced (see [the interface](./interface.md)).
+
+It is important to note that all identical names must be replaced with the same placeholder, irrespective of scope.
 
 ### Source code
 

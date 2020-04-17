@@ -1,6 +1,6 @@
 # Automated Analysis on Exercism
 
-Exercism' Automated Analysis a long-term endeavour to provide rapid feedback to students through the use of automated code analysis.
+Exercism's Automated Analysis is a long-term endeavour to provide rapid feedback to students through the use of automated code analysis.
 
 There are two elements to analysis:
 - **Analyzers:** Using syntax analysis to work out the correct feedback to give. Analyzers are pretty complex and challenging endeavours.

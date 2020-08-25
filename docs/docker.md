@@ -4,7 +4,7 @@ Our analyzers and representers are deployed as docker images.
 
 - Your dockerfile should live at the root directory of your repository and it should be called `Dockerfile`.
 - Your dockerfile should create the minimal image needed for your analyzer/representer.
-  It should use alpine linux if possible. Applying the official [Dockerfile best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) can help to create a minimal image.
+  Applying the official [Dockerfile best practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/) can help to create a minimal image. The minimal-sized image is often based on Alpine Linux.
 - All changes to dockerfiles require a PR review from the @exercism/ops.
 - The docker image should include the [local-tooling-webserver](https://github.com/exercism/local-tooling-webserver/blob/master/README.md#installation-docker).
 

@@ -5,10 +5,11 @@ All interactions with the Exercism website are handled automatically. Analyzers 
 ## Execution
 
 - An analyzer should provide an executable script. You can find more information in the [docker.md](../docker.md) file.
-- The script will receive two parameters:
+- The script will receive three parameters:
   - The slug of the exercise (e.g. `two-fer`).
   - A path to a directory containing the submitted file(s) (with a trailing slash).
-- The script must write a file to that directory named `analysis.json`
+  - A path to an output directory (with a trailing slash). This directory is writable.
+- The script must write an `analysis.json` file to the output directory.
 
 ## Output format
 

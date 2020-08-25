@@ -5,11 +5,12 @@ All interactions with the Exercism website are handled automatically. Represente
 ## Execution
 
 - A Representer should provide an executable script. You can find more information in the [docker.md](../docker.md) file.
-- The script will receive two parameters:
+- The script will receive three parameters:
   - The slug of the exercise (e.g. `two-fer`).
   - A path to a directory containing the submitted file(s) (with a trailing slash).
-- The script must write a `representation.txt` file to that directory.
-- The script must write a `mapping.json` file to that directory.
+  - A path to an output directory (with a trailing slash). This directory is writable.
+- The script must write a `representation.txt` file to the output directory.
+- The script must write a `mapping.json` file to the output directory.
 
 ## Output format
 

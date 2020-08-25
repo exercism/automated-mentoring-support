@@ -9,13 +9,15 @@ Our analyzers and representers are deployed as docker images.
 - The docker image should include the [local-tooling-webserver](https://github.com/exercism/local-tooling-webserver/blob/master/README.md#installation-docker).
 
 ### Analyzers
+
 - The working directory should be `/opt/analyzer`.
 - There should be a `/opt/analyzer/bin/run.sh` script that can be called with 3 parameters: the `exercise slug`, the path to the `solution folder`, and the path to the `output folder`. For more information see [The Interface](./analyzers/interface.md).
 
 ### Representers
+
 - The working directory should be `/opt/representer`.
 - There should be a `/opt/representer/bin/run.sh` script that can be called with 3 parameters: the `exercise slug`, the path to the `solution folder`, and the path to the `output folder`. For more information see [The Interface](./representers/interface.md).
 
 More background information and optional hints:
+
 - To run the containers in production the `runc` command is used which does not use the `ENTRYPOINT` specified in the `Dockerfile`. It would still be good to have an `ENTRYPOINT` specified for local use and testing.
-- The students solution is currently mounted to `/mnt/exercism-iteration/` in production. We still pass in the solution folder as the second argument to the analyzer in case that changes in the future.

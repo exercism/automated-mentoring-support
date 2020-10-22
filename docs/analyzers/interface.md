@@ -35,6 +35,9 @@ The `analysis.json` file should be structured as followed:
 }
 ```
 
+Messages are keys into `website-copy/automated-comments/`, e.g. [`ruby.general.explicit_return -> automated-comments/ruby/general/explicit_return.md`](https://github.com/exercism/website-copy/blob/47af5b309ac263629ca5c52904046f81e0cc8def/automated-comments/ruby/general/explicit_return.md).
+Those markdown files can be parameterized with strings like this `Try %{variable_name} += 1 instead`.
+
 The following statuses are valid:
 
 - `approve`: To be used when a solution can be approved.

@@ -18,6 +18,30 @@ Our analyzers and representers are deployed as docker images.
 - The working directory should be `/opt/representer`.
 - There should be a `/opt/representer/bin/run.sh` script that can be called with 3 parameters: the `exercise slug`, the path to the `solution folder`, and the path to the `output folder`. For more information see [The Interface](./representers/interface.md).
 
-More background information and optional hints:
+## Configuration
 
-- To run the containers in production the `runc` command is used which does not use the `ENTRYPOINT` specified in the `Dockerfile`. It would still be good to have an `ENTRYPOINT` specified for local use and testing.
+Configuration can be set in the [`tools.json` file](https://github.com/exercism/tooling-invoker/blob/main/tools.json) in the Tooling Invoker repository. 
+
+### Network
+
+Tools run without access to the internet. There are two different configurations you can use:
+1. `none`. This disables the networking device inside the container.
+2. `internal`. This adds a networking device inside the container but the network has no access to anything external.
+
+Different languages perform better/worse with different configurations (e.g. Ruby is 2x faster with `none`. Elixir is `12x` faster with `internal`.
+
+You can experiement locally by using the `--network` flag when running your docker. `--network none` is supported by default. 
+To use the internal network, first run `docker network create --internal internal` to create the network, then use `--network internal` when running the container.
+
+### Memory
+
+Languages can set the maximum memory they need to use to run their jobs. Setting this to be as low as possible means that we can run more jobs more quickly in parallel. It also means that people who try and abuse memory will not be able to succeed. Different langauges need wildly different maximum memory usage. Benchmarking the execution of a docker run to establish the maximum memory it uses is advised and appreciated.
+
+Memory [should be specified](https://docs.docker.com/config/containers/resource_constraints/#limit-a-containers-access-to-memory) using the number with suffix of b, k, m, g, to indicate bytes, kilobytes, megabytes, or gigabytes.
+
+### Running Docker locally
+
+You can test the settings above using this command:
+```
+docker container run -v /path/to/job:/mnt/exercism-iteration --network none -m 1GB exercism/ruby-test-runner lasagna /mnt/exercism-iteration/ /mnt/exercism-iteration/
+```

@@ -30,7 +30,7 @@ Tools run without access to the internet. There are two different configurations
 
 Different languages perform better/worse with different configurations (e.g. Ruby is 2x faster with `none`. Elixir is `12x` faster with `internal`.
 
-You can experiement locally by using the `--network` flag when running your docker. `--network none` is supported by default. 
+You can experiment locally by using the `--network` flag when running your docker. `--network none` is supported by default. 
 To use the internal network, first run `docker network create --internal internal` to create the network, then use `--network internal` when running the container.
 
 ### Memory
